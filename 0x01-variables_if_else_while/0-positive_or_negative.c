@@ -4,9 +4,9 @@
 /* more headers goes there */
 /* betty style doc for function main goes there */
 /**
- * main function is the entry
- * point of every c program
- */
+* main function is the entry
+* point of every c program
+*/
 int main(void)
 {
 	int n;
