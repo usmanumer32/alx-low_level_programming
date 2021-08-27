@@ -4,6 +4,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main function is the entry
+ * point of every c program
+ */
 int main(void)
 {
 	int n;
@@ -13,7 +17,7 @@ int main(void)
 	/* your code goes there */
 	if (n > 0)
 	{
-		printf("%d is positivr", n);
+		printf("%d is positive", n);
 	}
 	if (n == 0)
 	{
