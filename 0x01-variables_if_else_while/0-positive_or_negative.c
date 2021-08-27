@@ -7,8 +7,10 @@
  * main function is the entry
  * point of every c program
  */
-int main() {
+int main(void)
+{
     int n;
+    
     srand(time(0));
     n = rand() - RAND_MAX / 2;
     /* your code goes there */
