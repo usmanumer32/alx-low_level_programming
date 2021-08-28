@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more imports go here */
 /**
-* main function is the entry
-* point of every c program.
+* main - Short description (this is main function)
+* @void: no parameter
 */
 int main(void)
 {
