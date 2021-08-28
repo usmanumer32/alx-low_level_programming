@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/* more imports go here */
 /**
 * main function is the entry
 * point of every c program.
