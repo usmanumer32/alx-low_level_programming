@@ -11,9 +11,9 @@ int i;
 
 for (i = 0; i < 9; i++)
 {
-putchar(c[i]);
+_putchar(c[i]);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
 
