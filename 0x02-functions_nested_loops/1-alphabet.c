@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* main - check the code for ALX School students
-* 
-* Return: Always 0
+* print_alphabet - check the code for ALX School students.
+*
+* Return: nothing
 */
 void print_alphabet(void)
 {
