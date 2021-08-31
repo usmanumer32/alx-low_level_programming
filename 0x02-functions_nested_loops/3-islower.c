@@ -1,5 +1,5 @@
 #include <ctype.h>
-#include "holberton.h"
+#include "main.h"
 /**
 * main - check the code for ALX School students
 * 
@@ -10,8 +10,8 @@ int main(void)
 int r;
 
 r = _islower('H');
-putchar(r);
-putchar('\n');
+_putchar(r);
+_putchar('\n');
 return (0);
 }
 
