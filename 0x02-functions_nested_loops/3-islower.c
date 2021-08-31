@@ -1,20 +1,10 @@
 #include <ctype.h>
 #include "main.h"
 /**
-* main - check the code for ALX School students
-* 
-* Return: Always 0
+* _islower - check for lowercase character
+*
+* Return: Always 0 or 1
 */
-int main(void)
-{
-int r;
-
-r = _islower('H');
-_putchar(r);
-_putchar('\n');
-return (0);
-}
-
 int _islower(int c)
 {
 int res = islower(c);
