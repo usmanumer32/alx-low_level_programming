@@ -1,15 +1,10 @@
 #include <ctype.h>
 #include "main.h"
 /**
-* main - check the code for ALX School students
+* _isalpha - check for alphabetic character
 * 
 * Return: Always 0
 */
-int main(void)
-{
-return (0);
-}
-
 int _isalpha(int c)
 {
 int res = isalpha(c);
