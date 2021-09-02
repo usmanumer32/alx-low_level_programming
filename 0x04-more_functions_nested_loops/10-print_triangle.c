@@ -15,7 +15,7 @@ for (i = 1; i <= size; i++)
 {
 for (j = size - 1; j >= i; j--)
 {
-_putchar('.');
+_putchar(' ');
 }
 for (k = 1; k <= i; k++)
 {
