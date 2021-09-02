@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_diagonal - draw square
+* print_square - draw square
 * @size: int
 *
 * Return: nothing
