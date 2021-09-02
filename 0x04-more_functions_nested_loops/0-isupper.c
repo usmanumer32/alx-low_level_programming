@@ -8,10 +8,8 @@
 */
 int _isupper(int c)
 {
-int res;
 
-res = isupper(c);
-if (res > 0)
+if (c >= 'A' && c <= 'Z')
 {
 return (1);
 }
