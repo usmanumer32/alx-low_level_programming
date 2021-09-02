@@ -19,6 +19,6 @@ _putchar('1');
 }
 _putchar(j % 10 + '0');
 }
-}
 _putchar('\n');
+}
 }
