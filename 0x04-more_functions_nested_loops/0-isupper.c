@@ -10,7 +10,7 @@ int _isupper(int c)
 {
 int res;
 
-res = isUpper(c);
+res = isupper(c);
 if (res > 0)
 {
 return (1);
