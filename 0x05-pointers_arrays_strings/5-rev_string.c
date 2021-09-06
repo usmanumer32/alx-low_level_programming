@@ -9,13 +9,5 @@
 */
 void rev_string(char *s)
 {
-char str[sizeof(s)];
-int i, len;
-
-len = strlen(s);
-for (i = 1; i < len; i++)
-{
-str[i] = s[len - 1 - i];
-}
-puts(str);
+strrev(s);
 }
