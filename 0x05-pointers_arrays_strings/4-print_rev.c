@@ -15,7 +15,7 @@ int i, len;
 len = strlen(s);
 for (i = 1; i < len; i++)
 {
-str[i] = s[len - 1 - i];
+_putchar(s[len - 1 - i]);
 }
-puts(str);
+_putchar('\n');
 }
