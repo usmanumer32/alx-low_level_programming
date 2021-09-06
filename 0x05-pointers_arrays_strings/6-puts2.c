@@ -14,6 +14,6 @@ int i, length;
 length = strlen(str);
 for (i = 0; i < length; i++)
 {
-puts(str[i]);
+_puts(str[i]);
 }
 }
