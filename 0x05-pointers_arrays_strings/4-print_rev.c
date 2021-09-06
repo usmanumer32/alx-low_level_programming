@@ -13,7 +13,7 @@ char str[sizeof(s)];
 int i, len;
 
 len = strlen(s);
-for (i = 0; i < len; i++)
+for (i = 1; i < len; i++)
 {
 str[i] = s[len - 1];
 }
