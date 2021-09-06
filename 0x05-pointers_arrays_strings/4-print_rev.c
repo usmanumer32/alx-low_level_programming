@@ -16,7 +16,7 @@ for (i = 1; i < len; i++)
 {
 if (s[len - 1 - i] == '!')
 {
-_putchar('!');
+_puthchar(33);
 }
 else
 {
