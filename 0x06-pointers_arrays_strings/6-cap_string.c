@@ -13,7 +13,7 @@ char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{
 
 size = sizeof(str);
 size2 = sizeof(separators);
-for (i = 0; i < size; i++)
+for (i = 0; i < size - 1; i++)
 {
 int matched = 0;
 for (j = 0; j < size2; j++)
