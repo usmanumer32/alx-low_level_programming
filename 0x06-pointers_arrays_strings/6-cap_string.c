@@ -9,7 +9,7 @@
 char *cap_string(char *str)
 {
 int i, j, size, size2;
-char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}'};
 
 size = sizeof(str);
 size2 = sizeof(separators);
