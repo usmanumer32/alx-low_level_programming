@@ -1,4 +1,5 @@
 #include <ctype.h>
+#include <string.h>
 #include "main.h"
 /**
 * cap_string - letters capitalize
