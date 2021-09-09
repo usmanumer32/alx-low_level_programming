@@ -13,10 +13,13 @@ int i, size;
 size = sizeof(str);
 for (i = 0; i < size - 1; i++)
 {
+if (str[i] != '\0')
+{
 int x = isupper(str[i]);
 if (x == 0)
 {
 str[i] = toupper(str[i]);
+}
 }
 }
 return (str);
