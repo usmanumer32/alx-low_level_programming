@@ -28,6 +28,7 @@ break;
 if (matched == 1)
 {
 int x;
+
 x = isalpha(str[i + 1]);
 if (x != 0)
 {
