@@ -19,5 +19,5 @@ if (x == 0)
 str[i] = toupper(str[i]);
 }
 }
-return (*str);
+return (str);
 }
