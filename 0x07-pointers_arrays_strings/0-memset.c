@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 /**
 * _memset - letters capitalize
@@ -8,11 +9,8 @@
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-unsigned int i;
+char *ps;
 
-for (i = 0; i < n; i++)
-{
-s[i] = b;
-}
-return (s);
+ps = memset(s, b, n);
+return (ps);
 }
