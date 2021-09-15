@@ -17,7 +17,7 @@ return (1);
 }
 else if (num > i)
 {
-return (check(i+1, num));
+return (check(i + 1, num));
 }
 return (1);
 }
