@@ -28,7 +28,7 @@ allNumbers = false;
 }
 else
 {
-sum = sum + argv[i];
+sum = sum + atoi(argv[i]);
 }
 }
 if (!allNumbers)
