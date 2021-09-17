@@ -16,7 +16,7 @@ if (!argv[1] || !argv[2])
 printf("Error\n");
 return (1);
 }
-res = argv[1] * argv[2];
+res = atoi(argv[1]) * atoi(argv[2]);
 printf("%d\n", res);
 return (0);
 }
