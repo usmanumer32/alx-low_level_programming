@@ -1,42 +1,42 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /**
-* main - main
-* @argc: int (arg count)
-* @argv: args array
-* Return: int
+* checker - checks for valid input
+* @argc: argument count
+* @i: counter for argv[]
+* @j: counter for argv[][]
+* @argv: argument vector
+* Return: 0 on success, 1 on failure
+*/
+int checker(int argc, int i, unsigned int j, char *argv[])
+{
+for (i = 1; i <= argc; i++)
+for (j = 0; argv[i] != '\0' && j < strlen(argv[i]); j++)
+if (isdigit(argv[i][j]) == 0)
+return (1);
+return (0);
+}
+/**
+* main - adds all arguments together if they are digits.
+* @argc: argument count only accepts ints separated by spaces.
+* @argv: argument vector
+* Return: 0 on success, 1 on failure
 */
 int main(int argc, char *argv[])
 {
-int i, isdig, sum = 0;
-bool allNumbers = true;
+int result, i;
 
-if (argc == 1)
-{
-printf("%d\n", 0);
-}
-else
-{
-for (i = 1; i < argc; i++)
-{
-isdig = isdigit(argv[i]);
-if (isdig == 0)
-{
-allNumbers = false;
-}
-else
-{
-sum = sum + atoi(argv[i]);
-}
-}
-if (!allNumbers)
+result = 0;
+if (checker(argc, 1, 0, argv) == 1)
 {
 printf("Error\n");
 return (1);
 }
-printf("%d\n", sum);
-}
+for (i = 1; i < argc; i++)
+result += atoi(argv[i]);
+printf("%d\n", result);
 return (0);
 }
