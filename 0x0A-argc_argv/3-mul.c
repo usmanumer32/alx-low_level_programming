@@ -9,11 +9,14 @@
 */
 int main(int argc, char *argv[])
 {
-int i;
+int res;
 
-for (i = 0; i < argc; i++)
+if (!argv[1] || !argv[2])
 {
-printf("%s\n", argv[i]);
+printf("Error\n");
+return (1);
 }
+res = argv[1] * argv[2];
+printf("%d\n", res);
 return (0);
 }
