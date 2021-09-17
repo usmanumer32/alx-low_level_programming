@@ -13,5 +13,5 @@ char **pdest;
 
 pdest = &dest;
 memcpy(dest, src, n);
-return (pdest);
+return (dest);
 }
