@@ -27,6 +27,5 @@ for (i = 0; i < length; i++)
 {
 str[i] = s1[i];
 }
-str[i] = '\0';
 return (str);
 }
