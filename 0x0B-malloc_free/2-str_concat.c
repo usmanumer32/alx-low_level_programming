@@ -19,7 +19,7 @@ s2 = "";
 s1Size = *(&s1 + 1) - s1;
 s2Size = *(&s2 + 1) - s2;
 length = s1Size + s2Size + 1;
-str = malloc((sizeof(char) * s1Size) + (sizeof(char) * s2Size) + 1);
+str = malloc((sizeof(char) * s1Size) + (sizeof(char) * s2Size) +1);
 if (str == NULL)
 return (NULL);
 strcat(s1, s2);
