@@ -13,9 +13,9 @@ int i, j;
 
 if (width == 0 || height == 0)
 return (NULL);
-pptr = (int **)malloc(sizeof(int *) * width);
+pptr = (int **)malloc(sizeof(pptr) * height);
 for (i = 0; i < height; i++)
-pptr[i] = (int *)malloc(sizeof(int) * height);
+pptr[i] = malloc(sizeof(int) * width);
 if (pptr == NULL)
 return (NULL);
 for (i = 0; i < width; i++)
