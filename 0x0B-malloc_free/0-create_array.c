@@ -16,7 +16,7 @@ return (NULL);
 }
 else
 {
-t = (char *)malloc(sizeof(char) * size);
+t = malloc(sizeof(char) * size);
 if (t != NULL)
 t[0] = c;
 return (t);
