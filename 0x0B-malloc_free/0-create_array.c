@@ -9,6 +9,7 @@
 char *create_array(unsigned int size, char c)
 {
 char *t;
+int i;
 
 if (size == 0)
 {
@@ -18,7 +19,12 @@ else
 {
 t = malloc(sizeof(char) * size);
 if (t != NULL)
-t[0] = c;
+{
+for (i = 0; i < size; i++)
+{
+t[i] = c;
+}
+}
 return (t);
 }
 }
