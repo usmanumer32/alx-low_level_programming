@@ -2,23 +2,6 @@
 #include <string.h>
 #include "main.h"
 /**
-* lengthOfArray - return length
-* @s: char
-*
-* Return: int
-*/
-int lengthOfArray(char *s)
-{
-int size = 0;
-
-while (*s)
-{
-size++;
-s++;
-}
-return (size);
-}
-/**
 * str_concat - concatenate two strings
 * @s1: char
 * @s2: char
@@ -26,23 +9,23 @@ return (size);
 */
 char *str_concat(char *s1, char *s2)
 {
-char *str;
-int s1Size, s2Size, i, length;
+char *p;
+int s1count, s2count, sizeBuffer, i;
 
+/*Check for valid strings*/
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-s1Size = lengthOfArray(s1);
-s2Size = lengthOfArray(s2);
-length = s1Size + s2Size + 1;
-str = malloc(sizeof(char *) * length);
-if (str == NULL)
+for (s1count = 0; s1[s1count]; s1count++)
+;
+for (s2count = 0; s2[s2count]; s2count++)
+;
+sizeBuffer = s1count + s2count + 1;
+p = malloc(sizeBuffer * sizeof(char));
+if (p == NULL)
 return (NULL);
-strcat(s1, s2);
-for (i = 0; i < length; i++)
-{
-str[i] = s1[i];
-}
-return (str);
+for (i = 0; i < sizeBuffer; i++)
+i < s1count ? (p[i] = s1[i]) : (p[i] = s2[i - s1count]);
+return (p);
 }
