@@ -9,11 +9,11 @@
 */
 char *_strdup(char *str)
 {
-char *t;
+char *newString;
 
 if (str == NULL)
 return (NULL);
-char *newString = strdup(str);
+newString = strdup(str);
 if (newString == NULL)
 return (NULL);
 return (newString);
