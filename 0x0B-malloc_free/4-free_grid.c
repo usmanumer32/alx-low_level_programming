@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include "main.h"
+/**
+* free_grid - free 2-d grid
+* @grid: int
+* @height: int
+* Return: nothing
+*/
+void free_grid(int **grid, int height)
+{
+int i;
+
+for (i = 0; i < height; i++)
+free(grid[i]);
+}
