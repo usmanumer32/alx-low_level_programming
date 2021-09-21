@@ -2,6 +2,23 @@
 #include <string.h>
 #include "main.h"
 /**
+* lengthOfArray - return length
+* @s: char
+*
+* Return: int
+*/
+int lengthOfArray(char *s)
+{
+int size = 0;
+
+while (*s)
+{
+size++;
+s++;
+}
+return (size);
+}
+/**
 * str_concat - concatenate two strings
 * @s1: char
 * @s2: char
@@ -16,8 +33,8 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-s1Size = strlen(s1);
-s2Size = strlen(s2);
+s1Size = lengthOfArray(s1);
+s2Size = lengthOfArray(s2);
 length = s1Size + s2Size + 1;
 str = malloc(sizeof(char) * length);
 if (str == NULL)
