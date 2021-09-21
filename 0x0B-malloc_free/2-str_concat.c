@@ -36,7 +36,7 @@ s2 = "";
 s1Size = lengthOfArray(s1);
 s2Size = lengthOfArray(s2);
 length = s1Size + s2Size + 1;
-str = malloc(sizeof(char*) * length);
+str = malloc(sizeof(char *) * length);
 if (str == NULL)
 return (NULL);
 strcat(s1, s2);
