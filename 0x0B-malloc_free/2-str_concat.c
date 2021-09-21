@@ -17,7 +17,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 length = sizeof(s1) + sizeof(s2);
-str = malloc((sizeof(char) * length);
+str = malloc(sizeof(char) * length);
 if (str == NULL)
 return (NULL);
 strcat(s1, s2);
