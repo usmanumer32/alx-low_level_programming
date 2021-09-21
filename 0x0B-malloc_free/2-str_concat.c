@@ -16,8 +16,8 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-s1Size = *(&s1 + 1) - s1;
-s2Size = *(&s2 + 1) - s2;
+s1Size = strlen(s1);
+s2Size = strlen(s2);
 length = s1Size + s2Size + 1;
 str = malloc(sizeof(char) * length);
 if (str == NULL)
