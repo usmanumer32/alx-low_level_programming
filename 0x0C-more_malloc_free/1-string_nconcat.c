@@ -21,20 +21,15 @@ for (s1size = 0; s1[s1size]; s1size++)
 ;
 for (s2size = 0; s2[s2size]; s2size++)
 ;
-if (n < s2size)
-s2size = n;
-else
-{
-n = s2size;
-}
+s2size > n ? (s2size = n) : (n = s2size);
 totalsize = s1size + s2size + 1;
 p = malloc(totalsize *sizeof(char));
 if (p == NULL)
 return (NULL);
-for (i = 0; i < totalsize; i++)
+for (i = 0; i < totalsize - 1; i++)
 {
 i < s1size ? (p[i] = s1[i]) : (p[i] = s2[i - s1size]);
 }
-p[i] = '\0';
+p[totalsize] = '\0';
 return (p);
 }
