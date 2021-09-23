@@ -23,6 +23,10 @@ for (s2size = 0; s2[s2size]; s2size++)
 ;
 if (n < s2size)
 s2size = n;
+else
+{
+n = s2size;
+}
 totalsize = s1size + s2size + 1;
 p = malloc(totalsize *sizeof(char));
 if (p == NULL)
