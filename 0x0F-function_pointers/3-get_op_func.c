@@ -22,7 +22,7 @@ i = 0;
 while (i < 5)
 {
 if (*ops[i].op == *s && !(*(s + 1)))
-return (ops[i].f)
+return (ops[i].f);
 i++;
 }
 return (NULL);

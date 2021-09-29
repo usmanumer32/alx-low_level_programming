@@ -23,12 +23,12 @@ if (get_op_func(argv[2]) == NULL)
 printf("Error\n");
 exit(99);
 }
-if ((argv[2] == '/' || argv[2] == '%') && (num2 == 0))
+if ((*argv[2] == '/' || *argv[2] == '%') && (num2 == 0))
 {
 printf("Error\n");
 exit(100);
 }
-res = (*get_op_func(argv[2]))(num1, num2);
+res = (get_op_func(argv[2]))(num1, num2);
 printf("%d\n", res);
 return (0);
 }
