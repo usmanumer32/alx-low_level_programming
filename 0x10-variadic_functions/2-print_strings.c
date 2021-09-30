@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
-* print_strings: print strings
+* print_strings - print strings
 * @separator: char
 * @n: const unsigned int
 * @...: args list
