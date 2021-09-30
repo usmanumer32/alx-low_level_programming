@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "variadic_functions.h"
 /**
-* sum_them_all: calculate sum of all args
+* sum_them_all - calculate sum of all args
 * @n: const unsigned int
 * @...: args list
 * Return: int
