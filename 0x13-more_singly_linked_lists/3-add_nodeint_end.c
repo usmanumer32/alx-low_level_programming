@@ -19,5 +19,5 @@ tail = *head;
 while (tail->next != NULL)
 tail = tail->next;
 tail->next = new;
-return (new);
+return (*new);
 }
