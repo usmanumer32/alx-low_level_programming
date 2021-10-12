@@ -15,10 +15,9 @@ if (new == NULL)
 return (NULL);
 new->n = n;
 new->next = NULL;
-
 tail = *head;
-while (head->next != NULL)
-head = head->next;
+while (tail->next != NULL)
+tail = head->next;
 tail->next = new;
 return (new);
 }
