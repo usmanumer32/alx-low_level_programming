@@ -15,9 +15,14 @@ if (new == NULL)
 return (NULL);
 new->n = n;
 new->next = NULL;
+if (*head == NULL)
+{
+*head = new;
+return (*head);
+}
 tail = *head;
 while (tail->next != NULL)
 tail = tail->next;
 tail->next = new;
-return (*head);
+return (new);
 }
